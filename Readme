@@ -1,0 +1,71 @@
+
+### **Commands for the Chatbot**
+
+#### **1. Add a Medicine Record**
+Use the `+` command to add a new medicine record.  
+**Format**:  
+```
++<name>,<strength>,<brand>,<form>,<price>
+```
+**Example**:  
+```
++Aspirin,500mg,Bayer,Tablet,10.99
+```
+**Action**: Adds a record for Aspirin with the specified details.  
+**Chatbot Response**:  
+`Medicine added with ID: <id>`
+
+---
+
+#### **2. Delete a Medicine Record**
+Use the `-` command to delete a medicine record by its ID.  
+**Format**:  
+```
+-<id>
+```
+**Example**:  
+```
+-5
+```
+**Action**: Deletes the medicine record with ID `5`.  
+**Chatbot Response**:  
+`Medicine with ID 5 deleted.`  
+OR  
+`Medicine not found.`
+
+---
+
+#### **3. Update a Medicine Record**
+Use the `~` command to update a specific field of a medicine record.  
+**Format**:  
+```
+~<id>,<field>,<new_value>
+```
+**Fields You Can Update**:
+- `active_ingredient_name`
+- `active_ingredient_strength`
+- `brand_name`
+- `dosage_form`
+- `price`
+
+**Example**:  
+```
+~5,price,12.49
+```
+**Action**: Updates the price of the medicine with ID `5` to `12.49`.  
+**Chatbot Response**:  
+`Medicine with ID 5 updated.`  
+OR  
+`Medicine not found.`
+
+---
+
+#### **4. General Chat**
+For any other message that doesn't start with `+`, `-`, or `~`, the chatbot will respond with AI-generated content.  
+**Example**:  
+```
+What is the price of Aspirin?
+```
+**Chatbot Response**:  
+`Chatbot: The price of Aspirin varies by brand and strength.`
+

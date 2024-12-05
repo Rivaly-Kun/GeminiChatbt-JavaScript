@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot with Google Generative AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Pharmacy Chatbot</h1>
+    <button id="open-modal">Open Chatbot</button>
+
+    <div id="chatbot-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h2>Chat with me!</h2>
+            <div id="chat-area"></div>
+            <input id="chat-input" type="text" placeholder="Enter a command..." />
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+
+    <script type="module" src="chatbot.mjs"></script>
+</body>
+</html>
